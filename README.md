@@ -4,7 +4,7 @@ uNOMP became officially unsupported in October of 2016.
 
 [BlockGen](http://blockgen.net) will continue to update and maintain this project for the benefit of the crypto-currency community. 
 
-Update to Node.js 6.9.2 LTS Coming Soon...
+Update to Node.js 6.9.4 LTS Coming Soon...
 
 
 ------
