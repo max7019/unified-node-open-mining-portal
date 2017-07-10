@@ -1,5 +1,5 @@
 var redis = require('redis');
-var Stratum = require('blockgen-merged-pooler');
+var Stratum = require('merged-pooler');
 
 
 

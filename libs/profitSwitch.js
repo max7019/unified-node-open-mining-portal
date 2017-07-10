@@ -3,13 +3,13 @@ var net    = require('net');
 var bignum = require('bignum');
 var fs     = require('fs');
 
-var algos  = require('blockgen-merged-pooler/lib/algoProperties.js');
-var util   = require('blockgen-merged-pooler/lib/util.js');
+var algos  = require('merged-pooler/lib/algoProperties.js');
+var util   = require('merged-pooler/lib/util.js');
 var Cryptsy  = require('./apiCryptsy.js');
 var Poloniex = require('./apiPoloniex.js');
 var Mintpal  = require('./apiMintpal.js');
 var Bittrex  = require('./apiBittrex.js');
-var Stratum  = require('blockgen-merged-pooler');
+var Stratum  = require('merged-pooler');
 
 module.exports = function(logger){
 
