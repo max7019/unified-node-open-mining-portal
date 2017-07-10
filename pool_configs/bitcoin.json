@@ -1,0 +1,83 @@
+{
+    "enabled": true,
+    "coin": "bitcoin.json",
+
+    "auxes": [ // Defines auxillery coins
+//        {
+//            "coin": "lottoshares.json",
+//            "daemons": [ // It is reccomended to supply multiple daemons here for redundancy
+//                {
+//                    "host": "127.0.0.1",
+//                    "port": 23327,
+//                    "user": "lottosharesrpc",
+//                    "password": "By66dCmyX44uUbA7P3qqXJQeT3Ywd8dZ4dJdfgxCAxbg"
+//                }
+//            ]
+//        }
+    ],
+    "address": "19nkkEHW9Aj5fpnmng6BCZPvrQr3Ywq8ii",
+
+    "rewardRecipients": {
+        "111": 1.5,
+        "111": 0.1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 600,
+        "minimumPayment": 0.0001,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 8332,
+            "user": "dlukutin",
+            "password": "kbctyjr9"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 8
+        },
+        "3333": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 8192,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 8332,
+            "user": "dlukutin",
+            "password": "kbctyjr9"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
